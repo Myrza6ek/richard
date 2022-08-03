@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: ; */
+  box-sizing: border-box;
+}
+.momentum {
+  background: linear-gradient(135deg, #fc0a7e, #cf0063, #450e4b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 1152px;
+  align-items: center;
+}
+.container {
+  max-width: 1152px;
+}
+.menu__item {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.momentum-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  justify-content: space-around;
+  justify-content: auto;
+  text-align: center;
+  /* justify-items: auto; */
+}
+
+.momentum-section h1 {
+  font-size: 80px;
+  color: white;
+}
+.momentum-section p {
+  font-size: 30px;
+  color: white;
+}
+.momentum-section button {
+  background: #fc0a7e;
+  border: none;
+  border-radius: 3px;
+  width: 170px;
+  height: 66px;
+  color: white;
+  border: none;
+}
+
+.momentum-section img {
+  margin-right: 100px;
+}
+.desktop-app-info {
+  background: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  text-align: center;
+}
+.desktop-app-info__item_size-s {
+  color: #a8a8a8;
+  font-size: 12px;
+}
+.desktop-app-info__item_size-m {
+  color: #ffffff;
+  font-size: 38px;
+  margin-top: 25px;
+}
+.desktop-app-info__item_size-l {
+  color: #ffffff;
+}
+.desktop-app-info__img {
+  max-width: 90%;
+}
+.mobile-app-info-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.mobile-app-info-1__text {
+  max-width: 450px;
+  padding-right: 90px;
+}
+.mobile-app-info-1__item_size-s {
+  color: #a8a8a8;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mobile-app-info-1__item_size-m {
+  font-size: 38px;
+  margin-top: 25px;
+  margin-bottom: 22px;
+  max-width: 302px;
+}
+.mobile-app-info-1__item_size-l {
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 306px;
+}
+
+@media all and (max-width: 1190px) {
+  header {
+    width: 90%;
+  }
+}
+@media all and (max-width: 800px) {
+  .mobile-app-orders {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .mobile-app-orders__text {
+    padding-left: 0px;
+  }
+  .mobile-app-orders_textitem-l {
+    max-width: 100%;
+  }
+  .mobile-app-orders img {
+    max-width: 70%;
+  }
+}
+@media all and (max-width: 670px) {
+  .momentum-section img {
+    margin-right: 0px;
+    max-width: 90%;
+  }
+  .mobile-app-info-1 {
+    flex-direction: column;
+  }
+  .mobile-app-info-1 img {
+    max-width: 50%;
+  }
+  .mobile-app-info-1__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 570px) {
+  header {
+    flex-direction: column;
+  }
+  .momentum-section {
+    font-size: 50px;
+  }
+}
+@media all and (max-width: 460px) {
+  .momentum-section h1 {
+    font-size: 40px;
+  }
+  .momentum-section button {
+    width: 120px;
+    height: 40px;
+  }
+  .momentum-section {
+    height: 580px;
+  }
+}
+@media all and (max-width: 420px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__item {
+    font-size: 24px;
+  }
+  .desktop-app-info__item_size-m {
+    font-size: 15px;
+  }
+  .mobile-app-info-1__item_size-l {
+    font-size: 20px;
+  }
+}
+/* виды верстки */
+/* фиксированная верстка - все указано в PX (пикселях) */
+/* резиновая верстка - все указано в % , vh, vw, rem  */
+/* отзывчивая верстка - подстраивается под определенные размеры, меняет расположение блоков  */
+/* адаптивные верстка - все вместе */
+/* ______________________________________ */
+/* @media - запросы нужны чтобы задать адаптивку */
+/* -------------------------------------- */
+/* desktop-first */
+/* mobile-first */
